@@ -1,0 +1,392 @@
+/* shared var*/
+
+.max-fluid {
+    max-width: 1440px;
+}
+
+body {
+    background-color: #F2F1F0;
+    font-family:  'Noto Serif TC', serif,'Noto Sans TC', sans-serif, 'PT Serif', serif;
+    color: #1d1d1d;
+    letter-spacing: 0.1rem;
+}
+
+section {
+    margin: 75px 0;
+    padding: 20px 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li {
+    list-style-type: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color:#592F25;
+}
+
+h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #594E3F;
+}
+
+h4{
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #594E3F;
+}
+
+p {
+    margin: 0;
+    padding: 1%;
+}
+
+.overflow-hide{
+    overflow: hidden;
+}
+
+.text-start{
+    text-align: start;
+}
+
+.text-conter {
+    text-align: center;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.m-20 {
+    margin: 20px 0;
+}
+
+.p-0 {
+    padding: auto 0;
+}
+
+.m-0{
+    margin: 0;
+}
+
+/* header , nav */
+header{
+    width: 100%;
+    position: fixed;
+    top:2%;
+    right:3%;
+    z-index: 2;
+}
+
+header>.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-end;
+    
+}
+
+.logo{
+    width: 120px;
+    padding: 10px 0;
+    
+}
+
+.logo-top{
+    z-index: 99;
+    position: absolute;
+    top:3%;
+    left:3%
+    /* display: none; */
+}
+
+.logo>img{
+    width: 100%;
+}
+
+
+nav>ul{
+    width: 100%;
+    justify-content: space-around;
+    border-radius: 0 0 5px 5px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    min-height: 60px;
+}
+
+nav>ul>li{
+    padding: 0 20px;
+}
+
+nav>ul>li>a{
+    line-height: 1.1rem;
+    font-size: 1.1rem;
+    display: inline-block;
+    color: #F2F1F0;
+    font-size: 1.2rem;
+}
+.nav-top{
+    transition: .7s;
+}
+.nav-top.active{
+    background-color: #a6937c7a;
+    border-radius: 0 0 5px 5px;
+}
+
+.nav-btn{
+    display: none;
+}
+
+/* banner*/
+.banner{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.banner .carousel-item>img{
+    object-fit: contain;
+}
+
+.c-box{
+    position: relative;
+}
+
+.c-box>img{
+    object-fit: cover;
+}
+.c-content{
+    position: absolute;
+    top:55%;
+    left:10%;
+    text-align: left;
+}
+
+.c-content>h5{
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.2rem;
+    color:#1d1d1d;
+    background-color: #f2f1f0ee;
+    letter-spacing: 0.2rem;
+}
+
+.c-content>p{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.2rem;
+}
+
+/* product */
+.txt-wrap{
+    padding:80px;
+}
+
+.img-wrap>img{
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
+
+/* about-organic */
+.about-organic{
+    background-image: url("/images/pattern4.png");
+    background-repeat: repeat;
+}
+
+.txt{
+    width: 75%;
+    margin: auto;
+}
+
+/* shopping */
+.s-item-row>.col>.card{
+    padding:5px;
+}
+
+.card-body>h5{
+    font-size: 1.2rem;
+}
+.s-item-row>.col>.card>img{
+    object-fit: cover;
+    height: 200px;
+}
+
+/* farmer-diary */
+.farmer-diary{
+    box-shadow: 2px 2px 2px#1d1d1d28 ;
+    padding: 20px;
+}
+
+.farmer-diary>img{
+    object-fit: cover;
+    height: 250px;
+}
+.card-title {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #A6937C;
+    line-height: 1.6rem;
+    padding-top: 10px;
+}
+
+.card-text {
+    padding: 5px 0;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+/* top-btn */
+
+.top-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #A6937C;
+    border: 2px solid #A6937C;
+    ;
+    border-radius: 100%;
+    text-align: center;
+    position: fixed;
+    right: -10%;
+    bottom: 5%;
+    box-shadow: 2px 2px #A6937C9f;
+    transform: rotate(180deg);
+    transition: .6s;
+}
+
+.top-btn>.up-icon {
+    position: relative;
+    top: calc(50% - 13px);
+    /* 50% - 3/4 of icon height */
+}
+
+
+.top-btn.active {
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    transform: rotate(0deg);
+}
+
+/* footer */
+footer{
+    text-align: center;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.footer-nav>ul>li{
+    padding: 8px;
+    padding-left: 0px;
+} 
+.footer-nav>ul{
+    justify-content: left;
+} 
+footer .logo{
+    width: 120px;
+
+}
+.footer-nav>ul>li>a{
+    color:#A6937C;
+}
+.footer-nav>ul>li>a:hover{
+    color:#594E3F;
+}
+
+h6{
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.footer-info{
+    padding-bottom: 40px;
+}
+
+.copyright{
+    font-size: 0.6rem;
+    letter-spacing: 1pt;
+}
+
+.contact{
+    box-sizing: border-box;
+}
+
+/* 小螢幕裝置 */
+
+@media screen and (max-width:768px) {
+    .service ul>li {
+        width: 45%;
+        padding: 2%;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+        font-weight: 800;
+        line-height: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .banner {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .top-btn {
+        right: -50%;
+    }
+
+    .logo-top{
+        display: none;
+    }
+    .nav-btn{
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding-top: 10px;
+        position: absolute; 
+        right:0px;
+        top:0px;
+        z-index: 99;
+    }
+
+    .nav-top{
+        margin-top: 60px;
+        display: none;
+        background-color: #594E3F;
+        text-align: center;
+    }
+
+    .nav-top>ul{
+        display: block;
+    }
+    
+    .nav-top>ul>li{
+        padding: 10px 0;
+    } 
+
+    header>.container-fluid{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+
