@@ -6,11 +6,9 @@ $(window).scroll(function(){
     if ($(window).scrollTop() > ptop.offsetTop-200){
         console.log($(window).scrollTop(),"2:",ptop.offsetTop-200)
         $("#top-btn").addClass("active");
-        $('#nav-id').addClass('active');
         $('header').addClass('active');
     }else{
         $("#top-btn").removeClass("active")
-        $('#nav-id').removeClass('active')
         $('header').removeClass('active')
     }
 
