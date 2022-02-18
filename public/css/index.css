@@ -97,11 +97,15 @@ header>.container-fluid{
     
 }
 
+.logo-box{
+    position: relative;
+}
+
 .logo-top{
     z-index: 99;
     position: absolute;
     top:3%;
-    left:3%
+    left:3%;
     /* display: none; */
 }
 
@@ -133,9 +137,19 @@ nav>ul>li>a{
 .nav-top{
     transition: .7s;
 }
-.nav-top.active{
-    background-color: #a6937c7a;
+
+
+header.active .nav-top{
+    background-color: #a6937c50;
     border-radius: 0 0 5px 5px;
+}
+
+header.active{
+    width: 100%;
+    position: fixed;
+    top:0%;
+    right:3%;
+    z-index: 2;
 }
 
 .nav-btn{
